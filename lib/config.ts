@@ -5,12 +5,12 @@ export const WORKFLOW_ID =
 
 export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
-// Start-Screen Buttons (deutsch)
+// 🌸 Start-Screen Buttons (deutsche Version, mit gültigen Icons)
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
     label: "Was ist die Brocanterie Fleurie?",
     prompt: "Erzähl mir bitte, was die Brocanterie Fleurie ist.",
-    icon: "flower",
+    icon: "sparkles", // "flower" ersetzt durch gültiges Icon
   },
   {
     label: "Öffnungszeiten & Kontakt",
@@ -24,14 +24,14 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
   },
 ];
 
-// Platzhalter im Texteingabefeld (deutsch)
+// 💬 Platzhaltertext im Eingabefeld
 export const PLACEHOLDER_INPUT = "Frag mich etwas...";
 
-// Begrüssung im Chat (deutsch)
+// 💐 Begrüssung im Chat
 export const GREETING =
   "Bonjour & herzlich willkommen in der Brocanterie Fleurie 🌸 Wie kann ich dir heute helfen?";
 
-// Design
+// 🎨 Design- und Farbthema
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
     grayscale: {
@@ -45,4 +45,5 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
     },
   },
   radius: "round",
+  // Weitere Optionen unter: chatkit.studio/playground
 });
