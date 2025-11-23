@@ -1,53 +1,53 @@
 import { ColorScheme, StartScreenPrompt, ThemeOption } from "@openai/chatkit";
 
-// ☕ Workflow-ID für den Fleurie Chatbot
+// 🚀 Workflow-ID (kommt nachher aus dem Agent Builder)
 export const WORKFLOW_ID =
   process.env.NEXT_PUBLIC_CHATKIT_WORKFLOW_ID?.trim() ?? "";
 
 // Session Endpoint
 export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
-// 🌸 Startscreen Buttons & Prompts
+// 🚀 Start-Screen Buttons & Prompts
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
-    label: "Öffnungszeiten",
+    label: "Was ist Bitcoin?",
     prompt:
-      "Wie sind die Öffnungszeiten der Brocanterie Fleurie?"
+      "Erkläre mir in einfachen Worten, was Bitcoin ist und warum es erfunden wurde."
   },
   {
-    label: "Brocante-Artikel",
+    label: "Ist Bitcoin Spekulation?",
     prompt:
-      "Welche Brocante-Artikel bietet ihr an? Bitte ein paar Beispiele beschreiben."
+      "Viele sagen, Bitcoin sei nur Spekulation. Stimmt das? Bitte für skeptische Einsteiger erklären und Risiken sowie Chancen fair darstellen."
   },
   {
-    label: "Café & Getränke",
+    label: "Erste Sats kaufen",
     prompt:
-      "Was kann man im Café der Brocanterie Fleurie trinken und essen? Bitte kurz erklären."
+      "Wie kann ich sicher meine ersten Satoshis kaufen – Schritt für Schritt für Anfänger erklärt."
   },
   {
-    label: "Reservieren / Kontakt",
+    label: "Wallet & Sicherheit",
     prompt:
-      "Wie kann ich euch kontaktieren oder reservieren? Bitte Kontaktmöglichkeiten nennen."
+      "Was ist ein Wallet, wie bewahre ich Bitcoin sicher auf und was sind typische Anfängerfehler?"
   }
 ];
 
-// 🌸 Placeholder im Eingabefeld
-export const PLACEHOLDER_INPUT = "Frag mich etwas...";
+// Eingabefeld-Text
+export const PLACEHOLDER_INPUT = "Frag den Bitcoin-Coach…";
 
 // 👋 Begrüssungstext
 export const GREETING =
-  "Grüezi 🌸 Ich bin Fleurie! Hast du Fragen zu Café, Brocante oder Öffnungszeiten?";
+  "Hallo 👋 Ich bin dein Bitcoin-Coach! Ich helfe dir, Bitcoin verständlich zu erklären – ohne Fachchinesisch, ohne Hype.";
 
-// 🎨 Farben & Styling: Fleurie Theme
+// 🎨 Bitcoin-Theme (Orange)
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
     grayscale: {
-      hue: 320, // etwas wärmer für Fleurie
-      tint: 8,
-      shade: theme === "dark" ? -1 : -3
+      hue: 220,
+      tint: 6,
+      shade: theme === "dark" ? -1 : -4
     },
     accent: {
-      primary: "#E5C4CF", // Rosa Akzentfarbe für den Fleurie-Stil
+      primary: "#F7931A", // Bitcoin Orange
       level: 2
     }
   },
